@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgtpengine.a  CMakeFiles/gtpengine.dir/gtpengine/GtpEngine.cpp.o CMakeFiles/gtpengine.dir/gtpengine/GtpInputStream.cpp.o CMakeFiles/gtpengine.dir/gtpengine/GtpOutputStream.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgtpengine.a

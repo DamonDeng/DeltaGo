@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgouct.a  CMakeFiles/gouct.dir/gouct/GoUctBoard.cpp.o CMakeFiles/gouct.dir/gouct/GoUctUtil.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgouct.a
