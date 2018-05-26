@@ -129,6 +129,8 @@ iosfwd
 -
 sstream
 -
+iostream
+-
 
 /Users/mingxuan/Desktop/workspace/go_game/deltago/smartgame/SgEvaluatedMoves.cpp
 SgSystem.h

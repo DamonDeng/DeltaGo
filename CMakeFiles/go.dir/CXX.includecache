@@ -12581,6 +12581,8 @@ iosfwd
 -
 sstream
 -
+iostream
+-
 
 smartgame/SgEBWArray.h
 SgBoardColor.h

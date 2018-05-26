@@ -55,12 +55,22 @@ if(Boost_FOUND)
     add_executable(DeltaGo deltagomain/DeltagoMain.cpp deltagomain/DeltagoMainEngine.cpp)
     target_include_directories (DeltaGo PUBLIC go smartgame gtpengine gouct deltagomain simpleplayers)
 
+    add_executable(Converter deltagomain/Converter.cpp deltagomain/DeltagoMainEngine.cpp)
+    target_include_directories (Converter PUBLIC go smartgame gtpengine gouct deltagomain simpleplayers)
+
     target_link_libraries(DeltaGo PRIVATE smartgame)
     target_link_libraries(DeltaGo PRIVATE gtpengine)
     target_link_libraries(DeltaGo PRIVATE go)
     target_link_libraries(DeltaGo PRIVATE gouct)
     target_link_libraries(DeltaGo PRIVATE simpleplayers)
     target_link_libraries(DeltaGo PRIVATE ${Boost_LIBRARIES})
+
+    target_link_libraries(Converter PRIVATE smartgame)
+    target_link_libraries(Converter PRIVATE gtpengine)
+    target_link_libraries(Converter PRIVATE go)
+    target_link_libraries(Converter PRIVATE gouct)
+    target_link_libraries(Converter PRIVATE simpleplayers)
+    target_link_libraries(Converter PRIVATE ${Boost_LIBRARIES})
 
     target_link_libraries(smartgame PRIVATE ${Boost_LIBRARIES})
 

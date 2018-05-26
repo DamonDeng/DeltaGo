@@ -1,4 +1,5 @@
 /Users/mingxuan/Desktop/workspace/go_game/deltago/CMakeFiles/rebuild_cache.dir
+/Users/mingxuan/Desktop/workspace/go_game/deltago/CMakeFiles/Converter.dir
 /Users/mingxuan/Desktop/workspace/go_game/deltago/CMakeFiles/gouct.dir
 /Users/mingxuan/Desktop/workspace/go_game/deltago/CMakeFiles/DeltaGo.dir
 /Users/mingxuan/Desktop/workspace/go_game/deltago/CMakeFiles/smartgame.dir

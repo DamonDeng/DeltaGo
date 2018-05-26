@@ -9,6 +9,9 @@
 #include <iosfwd>
 #include <sstream>
 
+#include <iostream>
+
+
 //----------------------------------------------------------------------------
 
 /** Current logging stream. */
@@ -21,6 +24,19 @@ std::ostream& SgDebug();
 std::ostream& SgWarning();
 
 //----------------------------------------------------------------------------
+
+inline void SgDebugGotoXY(int x,int y)
+
+{ 
+
+  printf("%c[%d;%df",0x1B,y,x); 
+
+} 
+
+inline void SgDebugClear()
+{
+    std::system("clear");
+}
 
 /** Set logging stream to file. */
 void SgDebugToFile(const char* filename);

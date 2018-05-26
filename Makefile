@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Converter
+
+# Build rule for target.
+Converter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Converter
+.PHONY : Converter
+
+# fast build rule for target.
+Converter/fast:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/build
+.PHONY : Converter/fast
+
+#=============================================================================
 # Target rules for targets named gouct
 
 # Build rule for target.
@@ -563,6 +576,33 @@ Experimental/fast:
 	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
+deltagomain/Converter.o: deltagomain/Converter.cpp.o
+
+.PHONY : deltagomain/Converter.o
+
+# target to build an object file
+deltagomain/Converter.cpp.o:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/deltagomain/Converter.cpp.o
+.PHONY : deltagomain/Converter.cpp.o
+
+deltagomain/Converter.i: deltagomain/Converter.cpp.i
+
+.PHONY : deltagomain/Converter.i
+
+# target to preprocess a source file
+deltagomain/Converter.cpp.i:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/deltagomain/Converter.cpp.i
+.PHONY : deltagomain/Converter.cpp.i
+
+deltagomain/Converter.s: deltagomain/Converter.cpp.s
+
+.PHONY : deltagomain/Converter.s
+
+# target to generate assembly for a file
+deltagomain/Converter.cpp.s:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/deltagomain/Converter.cpp.s
+.PHONY : deltagomain/Converter.cpp.s
+
 deltagomain/DeltagoMain.o: deltagomain/DeltagoMain.cpp.o
 
 .PHONY : deltagomain/DeltagoMain.o
@@ -596,6 +636,7 @@ deltagomain/DeltagoMainEngine.o: deltagomain/DeltagoMainEngine.cpp.o
 
 # target to build an object file
 deltagomain/DeltagoMainEngine.cpp.o:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/deltagomain/DeltagoMainEngine.cpp.o
 	$(MAKE) -f CMakeFiles/DeltaGo.dir/build.make CMakeFiles/DeltaGo.dir/deltagomain/DeltagoMainEngine.cpp.o
 .PHONY : deltagomain/DeltagoMainEngine.cpp.o
 
@@ -605,6 +646,7 @@ deltagomain/DeltagoMainEngine.i: deltagomain/DeltagoMainEngine.cpp.i
 
 # target to preprocess a source file
 deltagomain/DeltagoMainEngine.cpp.i:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/deltagomain/DeltagoMainEngine.cpp.i
 	$(MAKE) -f CMakeFiles/DeltaGo.dir/build.make CMakeFiles/DeltaGo.dir/deltagomain/DeltagoMainEngine.cpp.i
 .PHONY : deltagomain/DeltagoMainEngine.cpp.i
 
@@ -614,6 +656,7 @@ deltagomain/DeltagoMainEngine.s: deltagomain/DeltagoMainEngine.cpp.s
 
 # target to generate assembly for a file
 deltagomain/DeltagoMainEngine.cpp.s:
+	$(MAKE) -f CMakeFiles/Converter.dir/build.make CMakeFiles/Converter.dir/deltagomain/DeltagoMainEngine.cpp.s
 	$(MAKE) -f CMakeFiles/DeltaGo.dir/build.make CMakeFiles/DeltaGo.dir/deltagomain/DeltagoMainEngine.cpp.s
 .PHONY : deltagomain/DeltagoMainEngine.cpp.s
 
@@ -3135,6 +3178,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... Converter"
 	@echo "... gouct"
 	@echo "... DeltaGo"
 	@echo "... smartgame"
@@ -3171,6 +3215,9 @@ help:
 	@echo "... simpleplayers"
 	@echo "... Continuous"
 	@echo "... Experimental"
+	@echo "... deltagomain/Converter.o"
+	@echo "... deltagomain/Converter.i"
+	@echo "... deltagomain/Converter.s"
 	@echo "... deltagomain/DeltagoMain.o"
 	@echo "... deltagomain/DeltagoMain.i"
 	@echo "... deltagomain/DeltagoMain.s"
